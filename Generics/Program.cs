@@ -9,7 +9,8 @@ namespace Generics
         {
             Console.WriteLine("To find maximum value betwwen 3 inputs using Generics \n");
 
-           Console.WriteLine( "Maximnum value is : "+TestCase1.MaximumIntergerNumber(5,2,1));
+            //Console.WriteLine("Maximnum value is : " + TestCase1.MaximumIntergerNumber(9, 3, 5));
+            Console.WriteLine( "Maximnum value is : "+TestCase1.MaximumIntergerNumber(5,15,1));
             
         }
     }
