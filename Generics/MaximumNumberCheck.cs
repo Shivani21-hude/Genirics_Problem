@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Generics
 {
-    internal class TestCase2
+    internal class MaximumNumberCheck
     {
         public static int MaximumIntergerNumber(int firstvalue, int secondvalue, int thirdvalue)
         {
