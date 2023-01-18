@@ -6,11 +6,18 @@ using System.Threading.Tasks;
 
 namespace Generics
 {
-    internal class MaximumNumberCheck
-    {
-        public static T Maximum<T>(T firstvalue, T secondvalue, T thirdvalue) where T : IComparable
+        public class MaximumNumberCheck<T> where T : IComparable
         {
-            if (firstvalue.CompareTo(secondvalue) > 0 && firstvalue.CompareTo(thirdvalue) > 0)
+            public T firstvalue, secondvalue, thirdvalue;
+            public MaximumNumberCheck(T firstvalue, T secondvalue, T thirdvalue)
+            {
+                this.firstvalue = firstvalue;
+                this.secondvalue = secondvalue;
+                this.thirdvalue = thirdvalue;
+            }
+            public static T Maximum(T firstvalue, T secondvalue, T thirdvalue)
+            {
+                if (firstvalue.CompareTo(secondvalue) > 0 && firstvalue.CompareTo(thirdvalue) > 0)
             {
                 return firstvalue;
             }
